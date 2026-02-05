@@ -5,33 +5,33 @@
 首先创建一个python3.9的环境，修改版本需要调整其他配置
 
 ```
-conda create -n skin python=3.9 -y
+conda create -n skin python=3.9 -yConda create -n skin python=3.9 -y
 
 ```
 
 conda最好配置下清华源然后再创建环境，可以在下载的时候配置临时清华源或者永久的清华源
 
 ```
-conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main
-conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free
-conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/r
-conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/pro
-conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/msys2
+conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/mainConda配置—添加通道https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main
+conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/freeConda配置—添加通道https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/freeConda配置—添加通道https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main
+conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/rConda配置—添加通道https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/r
+conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/proConda配置—添加通道https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/pro
+conda config --add channels https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/msys2Conda配置—添加通道https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/msys2
 
 ```
 
 pip临时使用清华源
 
 ```
-pip install -i https://pypi.tuna.tsinghua.edu.cn/simple some-package
+pip install -i https://pypi.tuna.tsinghua.edu.cn/simple some-packagePIP install -i https://pypi.tuna.tsinghua.edu.cn/simple some-package
 
 ```
 
 pip永久配置清华源
 
 ```
-pip install pip -U
-pip config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple
+pip install pip -U   pip安装pip -U
+pip config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simplePIP配置set global。index-url https://pypi.tuna.tsinghua.edu.cn/simple
 
 ```
 
